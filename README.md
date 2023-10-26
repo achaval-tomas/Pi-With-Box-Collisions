@@ -13,14 +13,11 @@ There's music that I thought fit well with the project but it can easily be remo
 
 ![2023-08-02 (1)](https://github.com/achaval-tomas/Pi-With-Box-Collisions/assets/134091945/d32a7b07-58d2-4f13-a62e-5a18b02e87cd)
 
-Run the visualization with with
+Play with (Windows, mingw32)
 ````
-g++ -o play -I include src/*.cpp -lSDL2 -lSDL2_mixer -lSDL2_image -lSDL2_ttf
-./play
+start bin/release/main
 ````
-Install necessary libraries:
+Compile with
 ````
-sudo apt-get install libsdl2-dev
-sudo apt-get install libsdl2-ttf-dev
-sudo apt-get install libsdl2-mixer-dev
+g++ -c src/*.cpp -std=c++14 -O3 -Wall -m64 -I include -I C:/SDL2-w64/include && g++ *.o -o bin/release/main -s -L C:/SDL2-w64/lib -lmingw32 -lSDL2main -lSDL2 -lSDL2_image -lSDL2_ttf -lSDL2_mixer
 ````
