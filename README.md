@@ -11,7 +11,9 @@ Real perfectly elastic collisions are calculated and it's optimized to perform f
 
 There's music that I thought fit well with the project but it can easily be removed by deleting all SDL_Mixer related code.
 
-![2023-08-02 (1)](https://github.com/achaval-tomas/Pi-With-Box-Collisions/assets/134091945/d32a7b07-58d2-4f13-a62e-5a18b02e87cd)
+## Full Run-Through
+https://github.com/achaval-tomas/Pi-With-Box-Collisions/assets/134091945/66264de8-5f13-4a7d-bd42-e61c81512b85
+
 
 Play with (Windows, mingw32)
 ````
