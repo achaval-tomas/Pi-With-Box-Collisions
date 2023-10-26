@@ -15,7 +15,7 @@ There's music that I thought fit well with the project but it can easily be remo
 
 Run the visualization with with
 ````
-g++ -o play -I include src/*.cpp \`sdl2-config --cflags --libs\` -lSDL2 -lSDL2_mixer -lSDL2_image -lSDL2_ttf
+g++ -o play -I include src/*.cpp -lSDL2 -lSDL2_mixer -lSDL2_image -lSDL2_ttf
 ./play
 ````
 Install necessary libraries:
