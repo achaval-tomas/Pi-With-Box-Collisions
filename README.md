@@ -14,22 +14,24 @@ There's music that I thought fit well with the project but it can easily be remo
 ## Full Run-Through
 https://github.com/achaval-tomas/Pi-With-Box-Collisions/assets/134091945/66264de8-5f13-4a7d-bd42-e61c81512b85
 
-
-Play with (Windows)
+## How to run the simulation
+On windows
 ````
 start bin/release/main
 ````
-Compile (on Windews, with mingw) with
-````
-g++ -c src/*.cpp -std=c++14 -O3 -Wall -m64 -I include -I /bin/release && g++ *.o -o bin/release/main -s -L /bin/release -lmingw32 -lSDL2main -lSDL2 -lSDL2_image -lSDL2_ttf -lSDL2_mixer
-````
-Play with (Linux)
+On Linux, or WSL
 ````
 ./bin/release/mainLinux
 ````
-Compile (on Linux) with
+
+## How to re-compile it (this may fix performance issues)
+On windows with [mingw](https://www.mingw-w64.org/)
+````
+g++ -c src/*.cpp -std=c++14 -O3 -Wall -m64 -I include -I /bin/release && g++ *.o -o bin/release/main -s -L /bin/release -lmingw32 -lSDL2main -lSDL2 -lSDL2_image -lSDL2_ttf -lSDL2_mixer
+````
+On Linux, or [WSL](https://learn.microsoft.com/es-es/windows/wsl/install)
 ````
 g++ -c src/*.cpp -std=c++14 -O3 -Wall -m64 -I include -I /bin/release && g++ *.o -o bin/release/mainLinux -s -L /bin/release -lSDL2main -lSDL2 -lSDL2_image -lSDL2_ttf -lSDL2_mixer
 ````
 
-**Necessary Libraries are included in bin/release. If this doesn't work for you, you may need to [Download and install SDL](https://www.libsdl.org/) and/or [mingw](https://www.mingw-w64.org/)**
+<ins>**Note:**</ins> **Necessary Libraries are included in bin/release. If this doesn't work for you, you may need to [Download and install SDL](https://www.libsdl.org/) and/or [mingw](https://www.mingw-w64.org/)**
